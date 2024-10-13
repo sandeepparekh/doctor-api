@@ -1,0 +1,13 @@
+fastapi                   # The FastAPI framework
+uvicorn                   # ASGI server to run the app
+sqlalchemy                # For interacting with databases
+databases                 # Async database support
+python-dotenv             # To load environment variables from .env file
+email-validator           # To validate email addresses
+pymysql                   # For MySQL database connection
+passlib[bcrypt]           # For password hashing (bcrypt algorithm)
+python-jose[cryptography] # For JWT generation and validation
+jinja2                    # For email templating (optional, if you're using HTML emails)
+httpx                     # Async HTTP client (for external requests, if needed)
+aiomysql                  # Async MySQL driver
+slowapi                   # Add this line for rate limiting
