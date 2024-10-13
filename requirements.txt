@@ -10,4 +10,4 @@ python-jose[cryptography] # For JWT generation and validation
 jinja2                    # For email templating (optional, if you're using HTML emails)
 httpx                     # Async HTTP client (for external requests, if needed)
 aiomysql                  # Async MySQL driver
-slowapi                   # Add this line for rate limiting
+slowapi                   # Add this line for rate limditing
