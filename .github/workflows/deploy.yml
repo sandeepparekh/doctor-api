@@ -20,7 +20,7 @@ jobs:
 
       - name: SSH and deploy
         run: |
-          ssh root@your-droplet-ip << EOF
+          ssh root@64.227.155.199 << EOF
           cd /var/www/api_app
           git pull origin master
           docker-compose down
