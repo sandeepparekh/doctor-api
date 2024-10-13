@@ -18,6 +18,10 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+      - name: Add Droplet SSH Key to known_hosts
+        run: |
+          ssh-keyscan -H 64.227.155.199 >> ~/.ssh/known_hosts
+
       - name: SSH and deploy
         run: |
           ssh root@64.227.155.199 << EOF
