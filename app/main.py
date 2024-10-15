@@ -43,6 +43,10 @@ async def startup():
 async def shutdown():
     await database.disconnect()
 
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
+
 # Root endpoint
 @app.get("/")
 def read_root():
